@@ -21,6 +21,11 @@
                     <x-nav-link :href="route('bookings.index')" :active="request()->routeIs('bookings.*')">
                         Réservations
                     </x-nav-link>
+                    @if(auth()->user()->is_admin)
+                        <x-nav-link href="/admin">
+                            Admin Panel
+                        </x-nav-link>
+                    @endif
                 </div>
             </div>
 
@@ -82,6 +87,11 @@
             <x-responsive-nav-link :href="route('bookings.index')" :active="request()->routeIs('bookings.*')">
                 Réservations
             </x-responsive-nav-link>
+            @if(auth()->user()->is_admin)
+                <x-responsive-nav-link href="/admin">
+                    Admin Panel
+                </x-responsive-nav-link>
+            @endif
         </div>
 
         <!-- Responsive Settings Options -->
