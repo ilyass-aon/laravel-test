@@ -60,7 +60,7 @@ class PropertyResource extends Resource
 
                 Tables\Columns\TextColumn::make('price_per_night')
                     ->label('Prix/nuit')
-                    ->money('€'),
+                    ->money('EUR'),
 
                 Tables\Columns\TextColumn::make('max_guests')
                     ->label('Capacité'),

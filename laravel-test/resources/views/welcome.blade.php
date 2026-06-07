@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ImmoBooK — Réservation immobilière</title>
+    <title>ImmoBooK</title>
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
 <body class="bg-gray-50 font-sans">
@@ -75,7 +75,7 @@
                         </p>
                         <div class="flex items-center justify-between">
                             <span class="text-primary font-bold text-lg">
-                                {{ number_format($property->price_per_night, 0) }} MAD
+                                {{ number_format($property->price_per_night, 0) }} €
                                 <span class="text-sm font-normal text-gray-400">/nuit</span>
                             </span>
                             @auth
