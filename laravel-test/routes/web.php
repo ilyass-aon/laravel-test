@@ -4,12 +4,49 @@ use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\PropertyController;
 use Illuminate\Support\Facades\Route;
 
+use App\Models\Booking;
+use App\Models\Property;
+
 Route::get('/', function () {
-    return view('welcome');
+    $properties = Property::whereDoesntHave('bookings', function ($query) {
+        $query->where('status', 'confirmed')
+              ->where('start_date', '<=', today())
+              ->where('end_date', '>=', today());
+    })->get();
+
+    return view('welcome', compact('properties'));
 });
 
 Route::get('/dashboard', function () {
-    return view('dashboard');
+    $user = auth()->user();
+
+    $availableProperties = Property::whereDoesntHave('bookings', function ($query) {
+        $query->where('status', 'confirmed')
+              ->where('start_date', '<=', today())
+              ->where('end_date', '>=', today());
+    })->count();
+
+    $totalBookings = Booking::where('user_id', $user->id)->count();
+
+    $nextBooking = Booking::where('user_id', $user->id)
+        ->where('status', 'confirmed')
+        ->where('start_date', '>=', today())
+        ->with('property')
+        ->orderBy('start_date')
+        ->first();
+
+    $recentBookings = Booking::where('user_id', $user->id)
+        ->with('property')
+        ->latest()
+        ->take(3)
+        ->get();
+
+    return view('dashboard', compact(
+        'availableProperties',
+        'totalBookings',
+        'nextBooking',
+        'recentBookings'
+    ));
 })->middleware(['auth', 'verified'])->name('dashboard');
 
 Route::middleware('auth')->group(function () {

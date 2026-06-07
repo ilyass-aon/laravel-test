@@ -21,4 +21,13 @@ class Property extends Model
     {
         return $this->hasMany(Booking::class);
     }
+
+    public function getIsAvailableAttribute()
+    {
+        return !$this->bookings()
+            ->where('status', 'confirmed')
+            ->where('start_date', '<=', today())
+            ->where('end_date', '>=', today())
+            ->exists();
+    }
 }
