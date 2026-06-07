@@ -15,6 +15,7 @@ class Booking extends Model
         'start_date',
         'end_date',
         'status',
+        'nbr_guests',
     ];
 
     protected $casts = [
