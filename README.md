@@ -11,7 +11,7 @@ Une application Laravel complète pour la gestion des réservations de propriét
 - [Seeding de la base de données](#seeding-de-la-base-de-données)
 - [Utilisation](#utilisation)
 - [Structure du projet](#structure-du-projet)
-- [Comptes de test](#comptes-de-test)
+- [Documentation interface](INTERFACE_DOCUMENTATION.md)
 
 ---
 
