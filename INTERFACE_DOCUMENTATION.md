@@ -8,7 +8,7 @@ Ce document fournit un aperçu visuel des différentes pages et interfaces de l'
 
 ## 1. 🏠 Page d'Accueil (`/`)
 
-![Page d'accueil](./screens/Page_d'acceuille.png)
+![Page d'accueil](screens/Page_d_accueil.png)
 
 - Liste des propriétés disponibles
 - Affichage des propriétés avec prix et localisation
@@ -19,7 +19,7 @@ Ce document fournit un aperçu visuel des différentes pages et interfaces de l'
 
 ## 2. 📝 Page d'Inscription (`/register`)
 
-![Page d'inscription](./screens/Page_Inscription.png)
+![Page d'inscription](screens/Page_Inscription.png)
 
 - Formulaire d'enregistrement utilisateur
 - Champs: Nom, Email, Mot de passe, Confirmation
@@ -30,7 +30,7 @@ Ce document fournit un aperçu visuel des différentes pages et interfaces de l'
 
 ## 3. 🔐 Page de Connexion (`/login`)
 
-![Page de connexion](./screens/Page_login.png)
+![Page de connexion](screens/Page_login.png)
 
 - Formulaire de connexion
 - Champs: Email et Mot de passe
@@ -41,7 +41,7 @@ Ce document fournit un aperçu visuel des différentes pages et interfaces de l'
 
 ## 4. 📊 Dashboard Utilisateur (`/dashboard`)
 
-![Dashboard utilisateur](./screens/Page_dashboard.png)
+![Dashboard utilisateur](screens/Page_dashboard.png)
 
 **Conteneur :**
 - Bienvenue utilisateur
@@ -60,7 +60,7 @@ Ce document fournit un aperçu visuel des différentes pages et interfaces de l'
 
 ## 5. 🛏️ Page de Réservation (`/properties/{id}/book`)
 
-![Page de réservation](./screens/Page_ReserverPropriete.png)
+![Page de réservation](screens/Page_ReserverPropriete.png)
 
 - Détails de la propriété sélectionnée
 - Formulaire de réservation:
@@ -74,7 +74,7 @@ Ce document fournit un aperçu visuel des différentes pages et interfaces de l'
 
 ## 6. 📋 Page de Gestion des Réservations
 
-![Gestion des réservations](./screens/Page_reservation.png)
+![Gestion des réservations](screens/Page_reservation.png)
 
 - Vue liste des réservations de l'utilisateur
 - Informations affichées:
@@ -90,7 +90,7 @@ Ce document fournit un aperçu visuel des différentes pages et interfaces de l'
 
 ### Page d'accueil Admin
 
-![Dashboard admin](./screens/Page_dashboardAdminPanel.png)
+![Dashboard admin](screens/Page_dashboardAdminPanel.png)
 
 Affiche:
 - Statistiques clés du système
@@ -99,7 +99,7 @@ Affiche:
 
 ### Gestion des propriétés
 
-![Gestion propriétés admin](./screens/Page_ProprieteAdmin.png)
+![Gestion propriétés admin](screens/Page_ProprieteAdmin.png)
 
 Vue Filament pour:
 - Lister toutes les propriétés
@@ -114,7 +114,7 @@ Vue Filament pour:
 
 ### Gestion des réservations
 
-![Gestion réservations admin](./screens/Page_ResrvationAdmin.png)
+![Gestion réservations admin](screens/Page_ResrvationAdmin.png)
 
 Permet de:
 - Voir toutes les réservations
@@ -125,7 +125,7 @@ Permet de:
 
 ### Espace Client
 
-![Dashboard admin panel](./screens/Page_dashboardPourAdmin.png)
+![Dashboard admin panel](screens/Page_dashboardPourAdmin.png)
 
 Remarque : cette capture montre le même dashboard que l'espace client. La seule différence visuelle est la présence, dans la barre de navigation, d'un lien «Admin Panel (Filament)». Le tableau de bord affiche :
 - Statistiques globales
@@ -136,7 +136,7 @@ Remarque : cette capture montre le même dashboard que l'espace client. La seule
 
 ### Suivi des revenus
 
-![Suivi revenus admin](./screens/Page_RevenuAdmin.png)
+![Suivi revenus admin](screens/Page_RevenuAdmin.png)
 
 Permet de:
 - Consulter les revenus par période
