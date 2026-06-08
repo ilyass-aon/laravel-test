@@ -13,15 +13,13 @@ class PropertySeeder extends Seeder
      */
     public function run(): void
     {
-        Property::insert([
+        $properties = [
     [
         'name'            => 'Villa Provençale',
         'description'     => 'Magnifique villa avec piscine au cœur du Luberon.',
         'price_per_night' => 890.00,
         'location'        => 'Gordes, Provence',
         'max_guests'      => 8,
-        'created_at'      => now(),
-        'updated_at'      => now(),
     ],
     [
         'name'            => 'Château de la Loire',
@@ -29,8 +27,6 @@ class PropertySeeder extends Seeder
         'price_per_night' => 1200.00,
         'location'        => 'Amboise, Vallée de la Loire',
         'max_guests'      => 12,
-        'created_at'      => now(),
-        'updated_at'      => now(),
     ],
     [
         'name'            => 'Appartement Saint-Germain',
@@ -38,8 +34,6 @@ class PropertySeeder extends Seeder
         'price_per_night' => 180.00,
         'location'        => 'Paris 6e',
         'max_guests'      => 2,
-        'created_at'      => now(),
-        'updated_at'      => now(),
     ],
     [
         'name'            => 'Maison Basque',
@@ -47,8 +41,6 @@ class PropertySeeder extends Seeder
         'price_per_night' => 350.00,
         'location'        => 'Bidart, Pays Basque',
         'max_guests'      => 5,
-        'created_at'      => now(),
-        'updated_at'      => now(),
     ],
     [
         'name'            => 'Chalet Mont-Blanc',
@@ -56,9 +48,11 @@ class PropertySeeder extends Seeder
         'price_per_night' => 420.00,
         'location'        => 'Chamonix, Alpes',
         'max_guests'      => 6,
-        'created_at'      => now(),
-        'updated_at'      => now(),
     ],
-]);
+];
+
+        foreach ($properties as $property) {
+            Property::create($property);
+        }
     }
 }

@@ -108,7 +108,7 @@
                             <td class="py-3 text-gray-600">{{ $booking->start_date->format('d/m/Y') }}</td>
                             <td class="py-3 text-gray-600">{{ $booking->end_date->format('d/m/Y') }}</td>
                             <td class="py-3 text-gray-600">{{ $booking->nbr_guests }}</td>
-                            <td class="py-3 font-semibold text-blue-600">{{ number_format($booking->total_price, 0) }} MAD</td>
+                            <td class="py-3 font-semibold text-blue-600">{{ number_format($booking->total_price, 0) }} €</td>
                             <td class="py-3">
                                 @if($booking->status === 'confirmed')
                                     <span class="px-2 py-1 bg-green-100 text-green-700 rounded-full text-xs">Confirmé</span>
