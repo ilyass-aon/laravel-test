@@ -1,8 +1,8 @@
 * text=auto eol=lf
-*.png -text
-*.jpg -text
-*.jpeg -text
-*.gif -text
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
 
 *.blade.php diff=html
 *.css diff=css
@@ -13,4 +13,3 @@
 /.github export-ignore
 CHANGELOG.md export-ignore
 .styleci.yml export-ignore
-*.png -text
