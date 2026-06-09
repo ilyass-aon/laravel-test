@@ -4,6 +4,8 @@
 
 Ce document fournit un aperçu visuel des différentes pages et interfaces de l'application Property Booking.
 
+Si les images ne s'affichent pas :
+- [Voir la documentation](https://drive.google.com/drive/folders/1LBIa2ai4Vk9RSD6cYrelgeD5p2edR-bc)
 ---
 
 ## 1. 🏠 Page d'Accueil (`/`)
